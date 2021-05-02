@@ -7,4 +7,5 @@
   line-height: normal;
   letter-spacing: normal;
   color: var(--white);
+  text-transform: uppercase;
 }

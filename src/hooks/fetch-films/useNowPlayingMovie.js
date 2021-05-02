@@ -10,7 +10,8 @@ export function useNowPlayingMovie(url){
     useEffect(()=> {
         axios.get(url)
              .then(response =>{
-                   let movie_data = response.data.results[randomIndex()]
+                   let movie_data = response.data.results[2]
+                   console.log(response.data.results)
                    setState({
                        now_playing_data: movie_data,
                        loading: false

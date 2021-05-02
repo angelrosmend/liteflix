@@ -10,6 +10,7 @@ function NowPlaying() {
     const {now_playing_data} = useNowPlayingMovie(now_playing_url)
 
     const {backdrop_path, title, overview} = now_playing_data
+    console.log(now_playing_data)
 
     const stylesImgBg = {
                         backgroundImage: `url(${image_url}${backdrop_path})`,
@@ -36,8 +37,7 @@ function NowPlaying() {
                         </div>
                         <article className="description-now-playing-wrapper ">
                             <h4>Ver pelicula</h4>
-                            <p>{overview}</p>
-
+                            <p>{overview && overview.slice(0, 250)}</p>
                         </article>
 
                     </div>
