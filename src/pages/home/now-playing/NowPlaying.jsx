@@ -25,7 +25,9 @@ function NowPlaying() {
         <div className="header-now-playing-img" 
              style={stylesImgBg}>
             <div className="now-playing-description-wrapper ">
-                <div className="now-playing-description-container ">
+                <div className="now-playing-description-container"
+                      data-aos="fade-right" 
+                      data-aos-delay="700">
                     <div className="now-playing-description-box ">
                         <h3 className="original-de-liteflix">
                             Original de Liteflix

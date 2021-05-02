@@ -10,7 +10,9 @@ function Upcoming() {
     console.log(movie_list)
     return (
         <div className="movie-list-container h-170">
-            <div className="overflow-up">
+            <div className="overflow-up" 
+                 data-aos="fade-up" 
+                 data-aos-delay="170">
             <Subtitle>Próximamente</Subtitle>
             <ul className="movie-list-wrapper">
 
