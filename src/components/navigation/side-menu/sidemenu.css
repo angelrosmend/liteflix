@@ -1,0 +1,145 @@
+.toggler-wrapper{
+    height: 2.5rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    display: flex;
+
+}
+.logo-toggler{
+    margin: auto;
+    transition: all 1s ease;
+}
+.logo-toggler.active{
+    margin: 1px;
+    position: absolute;
+    left: 40%;
+    transform: translateX(-100%);
+}
+/*Burger*/
+.custom-burger{
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 4;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+.burger-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.toggler{
+    position: relative;
+    width: 100%;
+    height: 2.5px;
+    margin: 10px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+/*Side menu*/
+
+.sidemenu{
+    width: 65%;
+    background: var(--mainBlack);
+    position: absolute;
+    height: 100vh;
+    left: -100%;
+    transition: all 1s;
+    z-index: 3;
+}
+.sidemenu.active{
+    left: 0;
+    position: fixed;
+}
+
+.sidemenu li{
+    list-style-type: none;
+}
+
+.sidemenu-content-account-wrapper, 
+.sidemenu-content-link-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.sidemenu-content-account-wrapper li{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--white);
+    border-bottom: 0.5px solid var(--grey);
+}
+
+.btn-user{
+  width: 100%;
+  height: 37px;
+  padding: 6px 38px 6px 7px;
+  border-radius: 18.5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  background-color: var(--grey);
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.btn-user span{
+    border-radius: 50%;
+    background-color: #ce00ff;
+    padding: 2px;
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+.btn-user p{
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--white);
+}
+.sidemenu-link{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--white)
+}
+.btn-add-sidemenu{
+    width: 100%;
+    height: 37px;
+    padding: 6px 38px 6px 7px;
+    border-radius: 18.5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: var(--red);
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;    
+}
