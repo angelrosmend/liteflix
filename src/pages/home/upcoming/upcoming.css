@@ -3,6 +3,8 @@
     display: flex;
     flex-direction: column;
     margin: auto;
+    height: 170px;
+    position: relative;
 }
 .upcoming-wrapper{
     width: 100%;
@@ -27,6 +29,27 @@
     width: 100%;
 }
 
-.h-170{
-    height: 170px;
+
+@media only screen and (max-width: 700px) {
+    .upcoming-container{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: auto;
+    
+    }
+    .upcoming-wrapper{
+        display: block;
+    }
+    .overflow-up{
+        position: relative;
+       
+    }
+    .upcoming-movie-card{
+        width: 99%;
+        height: 200px;
+        object-fit: contain;
+    }
+
 }

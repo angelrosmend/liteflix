@@ -4,6 +4,8 @@ export { default as bell} from './bell.svg'
 export { default as user } from './user-01.svg'
 export { default as plus } from './plus.svg'
 export { default as play } from './play.svg'
+export { default as userIcon } from './fill-1.svg'
+
 
 
 

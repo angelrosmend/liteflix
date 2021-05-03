@@ -1,5 +1,5 @@
 import React from 'react'
-import { play, plus } from '../../../assets/img'
+import { logo_liteflix, play, plus } from '../../../assets/img'
 import { useNowPlayingMovie } from '../../../hooks/fetch-films/useNowPlayingMovie'
 import { image_url, now_playing_url } from '../../../settings/urls'
 import "../home.css"
@@ -25,17 +25,19 @@ function NowPlaying() {
         <div className="header-now-playing-img" 
              style={stylesImgBg}>
             <div className="now-playing-description-wrapper ">
-                <div className="now-playing-description-container"
+                <div className="now-playing-description-container "
                       data-aos="fade-right" 
                       data-aos-delay="700">
-                    <div className="now-playing-description-box ">
+                    <div className="now-playing-description-box">
                         <h3 className="original-de-liteflix">
                             Original de Liteflix
                         </h3>
                         <h1 className="now-playing-title">{title}</h1>
                         <div className="now-playing-btns-wrapper px-3 my-3">
                             <BtnNowPlaying icon={play} text="Repoducir"/>
-                            <BtnNowPlaying icon={plus} text="Mi lista"/>
+                            <BtnNowPlaying icon={plus}
+                                           text="Mi lista"
+                                           extraClass="d-none-sm"/>
                         </div>
                         <article className="description-now-playing-wrapper ">
                             <h4>Ver pelicula</h4>
@@ -44,6 +46,7 @@ function NowPlaying() {
 
                     </div>
                     <div className="now-playing-description-box ">
+                      
                         {/* empty space */}
                     </div>
 

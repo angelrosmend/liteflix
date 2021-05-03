@@ -9,12 +9,12 @@ function Upcoming() {
     const {movie_list} = useMovieList(upcoming_url)
     console.log(movie_list)
     return (
-        <div className="movie-list-container h-170">
+        <div className="upcoming-container">
             <div className="overflow-up" 
                  data-aos="fade-up" 
                  data-aos-delay="170">
             <Subtitle>Próximamente</Subtitle>
-            <ul className="movie-list-wrapper">
+            <ul className="upcoming-wrapper">
 
                 {movie_list && movie_list.map(item =>{
                     const {id, poster_path, backdrop_path, title} = item

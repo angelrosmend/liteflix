@@ -11,8 +11,11 @@ function UpcomingMovie(props) {
         objectFit: 'contain'
     }
     return (
-       <li className="upcoming-movie-card" 
-           style={styles}>
+       <li className="upcoming-movie-card m-1" 
+           style={styles}
+           data-aos="fade-up" 
+           data-aos-delay="170"
+           >
 
        </li>
     )
